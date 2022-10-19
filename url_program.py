@@ -15,9 +15,7 @@ Input variables:
    
 import urllib 
 import json
-from datetime import timedelta
-from datetime import date
-from datetime import datetime
+from datetime import timedelta, date, datetime
 import time
 import os
 
