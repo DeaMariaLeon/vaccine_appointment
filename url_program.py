@@ -48,8 +48,7 @@ def Open_link(request, yr=2021, m=6, d=5):
 def url_prog(min_var):    
     #Start checking the website with today's date 
     start_date= str(date.today())
-    
-    
+ 
     path = "https://www.doctolib.fr/availabilities.json?start_date=" + start_date + "&visit_motive_ids=2554492&agenda_ids=432131-412723&insurance_sector=public&practice_ids=176188&destroy_temporary=true&limit=4"
     
     request = urllib.request.Request(path)
@@ -64,7 +63,7 @@ def url_prog(min_var):
     try:
         while True:
             time.sleep(min_var * 60)
-            print("no duermo")
+            print("Not sleeping")
             if  (now + minutes) < datetime.today().now():
                 print("Opening...")
                 
